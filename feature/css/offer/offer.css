@@ -1,0 +1,44 @@
+@import url(../main.css);
+@import url(../reused_style/reused_style.css);
+
+.offer-banner {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-block-end: 60px;
+}
+
+.offer-subtitle {
+    font-size: var(--fs-7);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-subtitle .span {
+    color: var(--black);
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.offer .badge {
+    font-weight: var(--fw-500);
+}
+
+.offer .section-title {
+    margin-block: 20px 8px;
+}
+
+.offer .section-text {
+    font-size: var(--fs-6);
+}
+
+.offer .countdown {
+    color: var(--hoockers-green);
+    font-size: var(--fs-4);
+    line-height: 1;
+    display: flex;
+    margin-block: 20px 40px;
+}

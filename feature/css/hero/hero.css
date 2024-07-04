@@ -1,0 +1,46 @@
+@import url(../main.css);
+@import url(../reused_style/reused_style.css);
+
+.hero {
+    padding-block-start: 0;
+}
+
+.hero-card {
+    background-color: var(--light-gray);
+    padding: 100px 15px;
+    background-position: 40%;
+}
+
+.hero-text {
+    font-size: var(--fs-6);
+    margin-block: 16px 30px;
+}
+
+.hero .price {
+    color: var(--black);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    margin-block-end: 20px;
+}
+
+.hero .scrollbar-item {
+    min-height: 100%;
+}
+
+.hero-card .hero-title {
+    background: linear-gradient(90deg, red, rgb(88, 88, 248), blue, green, pink, violet);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

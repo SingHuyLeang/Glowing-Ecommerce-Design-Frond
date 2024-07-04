@@ -1,0 +1,89 @@
+@import url(../main.css);
+@import url(../reused_style/reused_style.css);
+
+/*-----------------------------------*\
+                #HEADER#
+\*-----------------------------------*/
+.header .input-wrapper,
+.header-action-btn:not(:first-child),
+.navbar {
+    display: none;
+}
+
+.header {
+    position: relative;
+    padding-block-end: 80px;
+}
+
+.alert {
+    background-color: var(--pale-spring-bud);
+    color: var(--black);
+    font-size: var(--fs-7);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-block: 15px;
+}
+
+/* Header Top */
+.header-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding-block: 26px;
+    z-index: 4;
+}
+
+.header-top.active {
+    position: fixed;
+    top: -80px;
+    bottom: auto;
+    box-shadow: var(--shadow-1);
+    transform: translateY(100%);
+    transition: var(--transition-2);
+}
+
+.header-top.header-hide {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-open-btn {
+    width: 26px;
+    display: grid;
+    gap: 6px;
+    padding-block: 5px;
+}
+
+.nav-open-btn .line {
+    height: 2px;
+    background-color: var(--black);
+}
+
+.nav-open-btn .line-1 {
+    width: 15px;
+}
+
+.nav-open-btn .line-3 {
+    width: 18px;
+}
+
+
+.header-action-btn {
+    font-size: 28px;
+    transition: var(--transition-1);
+}
+
+.header-action-btn:is(:hover, :focus){
+    color: var(--black_70);
+}

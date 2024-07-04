@@ -1,0 +1,75 @@
+@import url(../main.css);
+@import url(../reused_style/reused_style.css);
+
+.slider {
+    z-index: 5;
+}
+
+.mobile-navbar {
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 40px;
+    z-index: 6;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: 0.25s var(--cubic-in);
+}
+
+.mobile-navbar.active {
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.4s var(--cubic-out);
+}
+
+.mobile-navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 55px;
+}
+
+.nav-close-btn {
+    font-size: 28px;
+    color: var(--hoockers-green);
+}
+
+.nav-close-btn ion-icon {
+    --ionicon-stroke-width: 40px;
+}
+
+.mobile-navbar .navbar-link {
+    color: var(--black);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    font-weight: var(--fw-600);
+    letter-spacing: 1px;
+    padding-block: 5px;
+    transition: var(--transition-1);
+}
+
+.mobile-navbar .navbar-link:is(:hover, :focus) {
+    color: var(--hoockers-green);
+}
+
+
+.overlay {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+    transition: var(--transition-1);
+}
+
+.overlay.active {
+    background-color: var(--black_50);
+    pointer-events: all;
+}

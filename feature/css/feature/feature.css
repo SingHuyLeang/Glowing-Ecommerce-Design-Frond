@@ -1,0 +1,24 @@
+@import url(../main.css);
+@import url(../reused_style/reused_style.css);
+
+
+.feature {
+    text-align: center;
+}
+
+.feature .section-title {
+    margin-block-end: 40px;
+}
+
+.feature .card-icon {
+    width: 100px;
+    margin-inline: auto;
+}
+
+.feature .card-title {
+    margin-block: 35px 15px;
+}
+
+.feature .card-text {
+    font-size: var(--fs-7);
+}
